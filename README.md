@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Jiawei Guan 官佳薇
 
-You can use the [editor on GitHub](https://github.com/Guan-JW/Guan-JW.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Jiawei Guan is an undergraduate at [School of Information](http://info.ruc.edu.cn/) [Renmin University of China](https://www.ruc.edu.cn/). She became a member of [Key Laboratory of Data Engineering and Knowledge Engineering](http://deke.ruc.edu.cn/) in 2021. Her research interest include High Performance Computing(HPC) and machine learning.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Address**: 427, Information Building, No. 59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China.
+**Email**: guanjw@ruc.edu.cn
 
-### Markdown
+### Education Background
+Sep. 2018 ~ Now: B.S. in School of Information, Renmin University of China.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Guan-JW/Guan-JW.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Publication
+**[WWW'22]** DREW: Efficient Winograd CNN Inference with Deep Reuse," Ruofan Wu, Feng Zhang, **Jiawei Guan**, Zhen Zheng, Xiaoyong Du and Xipeng Shen, The Web Conference (WWW), 2022. [acceptance rate: 17.7% (323/1822)] [to appear]
