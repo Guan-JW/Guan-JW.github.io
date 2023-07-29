@@ -30,7 +30,7 @@ Invited Talks
 1. TREC: Transient Redundancy Elimination-based Convolution. <br>
   NeurIPS, Virtual, 2022.11 [[Video & Slides](https://slideslive.com/38991872)] <br>
 2. Data Reuse in ML. <br>
-  NCSU, Virtual, 2022. 11 <br>
+  NCSU, Virtual, 2022.11 <br>
 
 Publications
 ---
