@@ -10,24 +10,40 @@ redirect_from:
 Jiawei Guan is a Ph.D. Student at at [Key Laboratory of Data Engineering and Knowledge Engineering](http://deke.ruc.edu.cn/) and [School of Information](http://info.ruc.edu.cn/), [Renmin University of China](http://www.ruc.edu.cn/). She's currently working with Prof. [Feng Zhang](https://fengzhangcs.github.io/). Her research focuces on Database system, High Performance Computing (HPC), and Compression, with a focus on improving the performance of systems or algorithms. Her publications are included in top DB (SIGMOD), DM (WWW), Sys (ASPLOS), and ML (NeurIPS) conferences. 
 
 Her contact information is listed below:
-- **Email**: guanjw@ruc.edu.cn
-- **Wechat**: w02141209
-- **Office**: 500, Information Building, No.59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China.
+
+**Email**: `guanjw@ruc.edu.cn`
+
+**Wechat**: `w02141209`
+
+**Office**: `500, Information Building, No.59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China.`
 
 Research Interests
 ---
-- Compression: [SIGMOD 2023](https://research.csc.ncsu.edu/picture/publications/papers/sigmod23.pdf)
-- HPC: [ASPLOS 2023](https://research.csc.ncsu.edu/picture/publications/papers/asplos23a_mcu.pdf) [TKDE 2023](https://ieeexplore.ieee.org/abstract/document/10106424) [NeurIPS 2022](https://proceedings.neurips.cc/paper_files/paper/2022/file/a995960dd0193654d6b18eca4ac5b936-Paper-Conference.pdf) [WWW 2022](https://research.csc.ncsu.edu/picture/publications/papers/www2022.pdf)
+- Compression: [[SIGMOD 2023](https://research.csc.ncsu.edu/picture/publications/papers/sigmod23.pdf)]
+- HPC: [[ASPLOS 2023](https://research.csc.ncsu.edu/picture/publications/papers/asplos23a_mcu.pdf)] [[TKDE 2023](https://ieeexplore.ieee.org/abstract/document/10106424)] [[NeurIPS 2022](https://proceedings.neurips.cc/paper_files/paper/2022/file/a995960dd0193654d6b18eca4ac5b936-Paper-Conference.pdf)] [[WWW 2022](https://research.csc.ncsu.edu/picture/publications/papers/www2022.pdf)]
 
-News
----
+<!-- News
+--- -->
 
 Invited Talks
 ---
+1. TREC: Transient Redundancy Elimination-based Convolution. <br>
+  NeurIPS, Virtual, 2022.11 [[Video & Slides](https://slideslive.com/38991872)] <br>
+2. Data Reuse in ML. <br>
+  NCSU, Virtual, 2022. 11 <br>
 
 Publications
 ---
+**2023**
 
+1. **[ASPLOS'2023]** "Space-Efficient TREC for Enabling Deep Learning on Microcontrollers", Jiesong Liu, Feng Zhang, ***Jiawei Guan***, Hsin-Hsuan Sung, Xiaoguang Guo, Xiaoyong Du, Xipeng Shen, ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), March 25, 2023. (CCF A) [[PDF](https://research.csc.ncsu.edu/picture/publications/papers/asplos23a_mcu.pdf)]
+2. **[SIGMOD’2023]** “CompressGraph: Efficient Parallel Graph Analytics with Rule-Based Compression”, Zheng Chen, Feng Zhang, ***Jiawei Guan***, Jidong Zhai, Xipeng Shen, et al., ACM Symposium on Principles of Database Systems (SIGMOD), 2023. (CCF A) [[PDF](https://research.csc.ncsu.edu/picture/publications/papers/sigmod23.pdf)]
+3. **[TKDE'2022]** "Expanding the Edge: Enabling Efficient Winograd CNN Inference With Deep Reuse on Edge Device", Feng Zhang, Ruofan Wu, ***Jiawei Guan***, Zhen Zheng, Xiaoguang Guo, Xiao Zhang, Xiaoyong Du, Xipeng Shen, IEEE Transactions on Knowledge and Data Engineering (TKDE), April 21, 2023. (CCF A) [[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10106424)]
+
+**2022**
+
+1. **[NeurIPS'2022]** "TREC: Transient Redundancy Elimination-based Convolution", ***Jiawei Guan***, Feng Zhang, Jiesong Liu, Hsin-Hsuan Sung, Ruofan Wu, Xiaoyong Du, Xipeng Shen, NeurIPS, 2022. (CCF A) [Acceptance Rate: 25.6% (2,672/10,411)] [[PDF](https://proceedings.neurips.cc/paper_files/paper/2022/file/a995960dd0193654d6b18eca4ac5b936-Paper-Conference.pdf)]
+2. **[WWW'2022]** “DREW: Efficient Winograd CNN Inference with Deep Reuse," Ruofan Wu, Feng Zhang, ***Jiawei Guan***, Zhen Zheng, Xiaoyong Du and Xipeng Shen, The Web Conference (WWW), 2022. (CCF A) [Acceptance rate: 17.7% (323/1,822)] [[PDF](https://research.csc.ncsu.edu/picture/publications/papers/www2022.pdf)]
 
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
