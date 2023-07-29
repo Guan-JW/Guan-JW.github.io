@@ -11,11 +11,11 @@ Jiawei Guan is a Ph.D. Student at at [Key Laboratory of Data Engineering and Kno
 
 Her contact information is listed below:
 
-**Email**: `guanjw@ruc.edu.cn`
+📮 **Email**: guanjw@ruc.edu.cn
 
-**Wechat**: `w02141209`
+💬 **Wechat**: w02141209
 
-**Office**: `500, Information Building, No.59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China.`
+🏢 **Office**: 500, Information Building, No.59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China.
 
 Research Interests
 ---
