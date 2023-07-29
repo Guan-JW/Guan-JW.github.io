@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Jiawei Guan is a Ph.D. Student at at [Key Laboratory of Data Engineering and Knowledge Engineering](http://deke.ruc.edu.cn/) and [School of Information](http://info.ruc.edu.cn/), [Renmin University of China](http://www.ruc.edu.cn/). She's currently working with Prof. [Feng Zhang](https://fengzhangcs.github.io/). Her research focuces on Database system, High Performance Computing (HPC), and Compression, with a focus on improving the performance of systems or algorithms. Her publications are included in top DB (SIGMOD), DM (WWW), Sys (ASPLOS), and ML (NeurIPS) conferences. 
+Jiawei Guan is a Ph.D. Student at [Key Laboratory of Data Engineering and Knowledge Engineering](http://deke.ruc.edu.cn/) and [School of Information](http://info.ruc.edu.cn/), [Renmin University of China](http://www.ruc.edu.cn/). She's currently working with Prof. [Feng Zhang](https://fengzhangcs.github.io/). Her research focuces on Database System and Theory, High Performance Computing (HPC), and Compression. Her publications are included in top DB (SIGMOD), DM (WWW), Sys (ASPLOS), and ML (NeurIPS) conferences. 
 
 Her contact information is listed below:
 
