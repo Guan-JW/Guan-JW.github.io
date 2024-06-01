@@ -20,7 +20,7 @@ Her contact information is listed below:
 Research Interests
 ---
 - **HPC: [[ASPLOS 2023](https://research.csc.ncsu.edu/picture/publications/papers/asplos23a_mcu.pdf)] [[TKDE 2023](https://ieeexplore.ieee.org/abstract/document/10106424)] [[NeurIPS 2022](https://proceedings.neurips.cc/paper_files/paper/2022/file/a995960dd0193654d6b18eca4ac5b936-Paper-Conference.pdf)] [[WWW 2022](https://research.csc.ncsu.edu/picture/publications/papers/www2022.pdf)]**
-- **Compression: [[SIGMOD 2023](https://research.csc.ncsu.edu/picture/publications/papers/sigmod23.pdf)]**
+- **Compression: [[SIGMOD 2023](https://research.csc.ncsu.edu/picture/publications/papers/sigmod23.pdf)]** **[[SIGMOD 2024](https://dl.acm.org/doi/abs/10.1145/3626765)]** 
 
 <!-- News
 --- -->
