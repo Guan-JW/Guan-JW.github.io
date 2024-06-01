@@ -34,6 +34,11 @@ Invited Talks
 
 Publications
 ---
+**2024**
+1. **[SIGMOD'2024]** "Homomorphic Compression: Making Text Processing on Compression", ***JiaWei Guan***, Feng Zhang, Siqi Ma, Kuangyu Chen, Yihua Hu, Yuxing Chen, Anqun Pan, Xiaoyong Du, ACM Symposium on Principles of Database Systems (SIGMOD), 2023. (CCF A) [[PDF](https://dl.acm.org/doi/abs/10.1145/3626765)]
+2. **[VLDB'2024]** "Improving Graph Compression for Efficient Resource-Constrained Graph Analytics", Qian Xu, Juan Yang, Feng Zhang, Zheng Chen, ***JiaWei Guan***, Kang Chen, Ju Fan, Youren Shen, Ke Yang, Yu Zhang, Xiaoyong Du, VLDB, 2024. (CCF A) [[PDF]()]
+3. **[VLDB'2024(demo)]** "HocoPG: A Database System with Homomorphic Compression for Text Processing", ***Jiawei Guan***, Feng Zhang, Yuxin Tang, Weitang Ye, Xiaoyong Du. VLDB (demo) 2024. (CCF A) [[PDF]()]
+
 **2023**
 
 1. **[ASPLOS'2023]** "Space-Efficient TREC for Enabling Deep Learning on Microcontrollers", Jiesong Liu, Feng Zhang, ***Jiawei Guan***, Hsin-Hsuan Sung, Xiaoguang Guo, Xiaoyong Du, Xipeng Shen, ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), March 25, 2023. (CCF A) [[PDF](https://research.csc.ncsu.edu/picture/publications/papers/asplos23a_mcu.pdf)]
