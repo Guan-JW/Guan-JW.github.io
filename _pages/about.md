@@ -34,10 +34,15 @@ Invited Talks
 
 Publications
 ---
+**2025**
+1. **[VLDB’25]** "A Systematic Study on Early Stop Metrics in HPO and the Implications of Uncertainty", ***Jiawei Guan***, Feng Zhang, Jiesong Liu, Xiaoyong Du, Xipeng Shen, VLDB, 2025. (CCF A)
+
 **2024**
-1. **[SIGMOD'2024]** "Homomorphic Compression: Making Text Processing on Compression", ***JiaWei Guan***, Feng Zhang, Siqi Ma, Kuangyu Chen, Yihua Hu, Yuxing Chen, Anqun Pan, Xiaoyong Du, ACM Symposium on Principles of Database Systems (SIGMOD), 2024. (CCF A) [[PDF](https://dl.acm.org/doi/abs/10.1145/3626765)]
-2. **[VLDB'2024]** "Improving Graph Compression for Efficient Resource-Constrained Graph Analytics", Qian Xu, Juan Yang, Feng Zhang, Zheng Chen, ***Jiawei Guan***, Kang Chen, Ju Fan, Youren Shen, Ke Yang, Yu Zhang, Xiaoyong Du, VLDB, 2024. (CCF A) [[PDF]()]
+1. **[SIGMOD'2024]** "Homomorphic Compression: Making Text Processing on Compression", ***Jiawei Guan***, Feng Zhang, Siqi Ma, Kuangyu Chen, Yihua Hu, Yuxing Chen, Anqun Pan, Xiaoyong Du, ACM Symposium on Principles of Database Systems (SIGMOD), 2024. (CCF A) [[PDF](https://dl.acm.org/doi/abs/10.1145/3626765)]
+2. **[VLDB'2024]** "Improving Graph Compression for Efficient Resource-Constrained Graph Analytics", Qian Xu, Juan Yang, Feng Zhang, Zheng Chen, ***Jiawei Guan***, Kang Chen, Ju Fan, Youren Shen, Ke Yang, Yu Zhang, Xiaoyong Du, VLDB, 2024. (CCF A) [[PDF](https://dl.acm.org/doi/10.14778/3665844.3665852)]
 3. **[VLDB'2024 (demo)]** "HocoPG: A Database System with Homomorphic Compression for Text Processing", ***Jiawei Guan***, Feng Zhang, Yuxin Tang, Weitang Ye, Xiaoyong Du. VLDB (demo) 2024. (CCF A) [[PDF](https://guan-jw.github.io/files/p2088-guan.pdf)]
+4. **[NeurIPS’24]** "UQ-guided Hyperparameter Optimization for Iterative Learners", Jiesong Liu, Feng Zhang, ***Jiawei Guan***, Xipeng Shen. (CCF A) [[PDF](http://fred1031.github.io/files/NeurIPS2024.pdf)]
+5. **[TC’24]** "Enabling Efficient Deep Learning on MCU with Transient Redundancy Elimination", Jiesong Liu, Feng Zhang, ***Jiawei Guan***, Hsing-Hsuan Sung, Xiaoyong Du, Xipeng Shen, IEEE Transactions on Computers (TC), 2024. (CCF A) [[PDF](http://fred1031.github.io/files/TC2024.pdf)]
 
 **2023**
 
