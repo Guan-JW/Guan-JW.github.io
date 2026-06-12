@@ -117,6 +117,21 @@
     flex: 0 0 7.5em;
   }
 
+  .paper-box-image .badge {
+    display: block !important;
+    width: 100%;
+    min-width: 0;
+    padding: 0.45em 0.7em;
+    color: #fff !important;
+    background: #00369f !important;
+    border-radius: $border-radius;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    white-space: normal;
+  }
+
   .paper-box-text {
     flex: 1 1 auto;
     min-width: 0;
