@@ -81,7 +81,7 @@ Youyang Xia, Feng Zhang, Junda Pan, Yihao Liu, **Jiawei Guan**, Huanchen Zhang, 
 <div class="paper-box-image"><span class="badge">VLDB 2025</span></div>
 <div class="paper-box-text" markdown="1">
 
-<p class="pub-title">A Systematic Study on Early Stop Metrics in HPO and the Implications of Uncertainty</p>
+<p class="pub-title"><a href="https://dl.acm.org/doi/10.14778/3725688.3725689">A Systematic Study on Early Stop Metrics in HPO and the Implications of Uncertainty</a></p>
 
 **Jiawei Guan**, Feng Zhang, Jiesong Liu, Xipeng Shen
 
@@ -94,7 +94,7 @@ Youyang Xia, Feng Zhang, Junda Pan, Yihao Liu, **Jiawei Guan**, Huanchen Zhang, 
 <div class="paper-box-image"><span class="badge">VLDB 2025</span></div>
 <div class="paper-box-text" markdown="1">
 
-<p class="pub-title">Improving Time Series Data Compression in Apache IoTDB</p>
+<p class="pub-title"><a href="https://dl.acm.org/doi/10.14778/3748191.3748204">Improving Time Series Data Compression in Apache IoTDB</a></p>
 
 Yuxin Tang, Feng Zhang, **Jiawei Guan**, Yuan Tian, Xiangdong Huang, Chen Wang, Jianmin Wang, Xiaoyong Du
 
@@ -107,7 +107,7 @@ Yuxin Tang, Feng Zhang, **Jiawei Guan**, Yuan Tian, Xiangdong Huang, Chen Wang, 
 <div class="paper-box-image"><span class="badge">TCC 2025</span></div>
 <div class="paper-box-text" markdown="1">
 
-<p class="pub-title">Breaking the Edge: Enabling Efficient Neural Network Inference on Integrated Edge Devices</p>
+<p class="pub-title"><a href="https://www.computer.org/csdl/journal/cc/2025/02/10959707/25LW8D6NirS">Breaking the Edge: Enabling Efficient Neural Network Inference on Integrated Edge Devices</a></p>
 
 Feng Zhang, Chenyang Zhang, **Jiawei Guan**, Qiangjun Zhou, Kuangyu Chen, Xiao Zhang, Bingsheng He, Jidong Zhai, Xiaoyong Du
 
