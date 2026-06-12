@@ -5,7 +5,7 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 2em;
+  margin-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
@@ -20,7 +20,7 @@
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(0 of 12);
   }
 
   .page__inner-wrap {
@@ -36,6 +36,7 @@
 
 .page__title {
   margin-top: 0;
+  margin-bottom: 0;
   line-height: 1;
 
   & + .page__meta {
@@ -50,9 +51,14 @@
 
 .page__content {
 
-  h2 {
+  h1, h2 {
+    margin-top: 1em;
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+  }
+
+  h2 {
+    font-size: $type-size-3;
   }
 
   p, li, dl {
@@ -81,6 +87,73 @@
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
+    }
+  }
+
+  .anchor:before,
+  h1:before,
+  h2:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 3em;
+    margin-top: -3em;
+  }
+
+  .news-container ul {
+    margin-top: 0;
+  }
+
+  .paper-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25em;
+    padding: 1.35em 0;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .paper-box-image {
+    flex: 0 0 7.5em;
+  }
+
+  .paper-box-text {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    p {
+      margin-bottom: 0.35em;
+    }
+  }
+
+  .badge {
+    display: inline-block;
+    min-width: 6.5em;
+    padding: 0.35em 0.7em;
+    color: #fff;
+    background-color: #00369f;
+    border-radius: $border-radius;
+    font-size: 0.85em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .pub-title {
+    margin-top: 0;
+    font-weight: 700;
+  }
+
+  .pub-venue {
+    color: $gray;
+  }
+
+  @include breakpoint(max-width $medium) {
+    .paper-box {
+      display: block;
+    }
+
+    .paper-box-image {
+      margin-bottom: 0.75em;
     }
   }
 

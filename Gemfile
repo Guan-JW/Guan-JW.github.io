@@ -11,6 +11,10 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
+# Keep local preview compatible with macOS system Ruby 2.6.
+gem "ffi", "< 1.17"
+gem "nokogiri", "1.13.10"
+
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
 

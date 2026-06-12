@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export LANG="${LANG:-en_US.UTF-8}"
+export LC_ALL="${LC_ALL:-en_US.UTF-8}"
+
+BUNDLE="${BUNDLE:-$HOME/.gem/ruby/2.6.0/bin/bundle}"
+if [ ! -x "$BUNDLE" ]; then
+  BUNDLE="bundle"
+fi
+
+exec "$BUNDLE" _2.4.22_ exec jekyll serve --livereload "$@"

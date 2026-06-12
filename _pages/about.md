@@ -1,98 +1,283 @@
 ---
 permalink: /
-title: "About"
-excerpt: "About me"
+title: ""
+excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
-Jiawei Guan is a Ph.D. Student at [Key Laboratory of Data Engineering and Knowledge Engineering](http://deke.ruc.edu.cn/) and [School of Information](http://info.ruc.edu.cn/), [Renmin University of China](http://www.ruc.edu.cn/). She's currently working with Prof. [Feng Zhang](https://fengzhangcs.github.io/). Her research focuces on Database System and Theory, High Performance Computing (HPC), and Compression. Her publications are included in top DB (SIGMOD), Sys (ASPLOS), DM (WWW), and ML (NeurIPS) conferences. 
 
-Her contact information is listed below:
+About Me
+---
 
-📮 **Email**: guanjw@ruc.edu.cn
+I am a Ph.D. student in Computer Science at the [School of Information](http://info.ruc.edu.cn/) and the [Key Laboratory of Data Engineering and Knowledge Engineering](http://deke.ruc.edu.cn/), [Renmin University of China](http://www.ruc.edu.cn/), advised by Prof. [Feng Zhang](https://fengzhangcs.github.io/) and Prof. Xiaoyong Du. I received my bachelor's degree in Data Science and Big Data Technology from Renmin University of China in 2022. During my Ph.D. study, I have visited [North Carolina State University](https://www.ncsu.edu/), working with Prof. [Xipeng Shen](https://pictureresearch.github.io/picture_website/xshen5/index.htm), and [National University of Singapore](https://www.nus.edu.sg/), working with Prof. [Bingsheng He](https://www.comp.nus.edu.sg/~hebs/).
 
-💬 **Wechat**: w02141209
-
-🏢 **Office**: 500, Information Building, No.59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China.
+My research lies at the intersection of **data compression** and **high-performance AI systems**. I am particularly interested in designing compression-aware algorithms and systems that reduce storage, memory, and computation costs while preserving practical performance on real workloads. My recent work studies compressed-domain text and graph processing, efficient neural network inference on edge devices, and KV cache compression/quantization for large language model training/inference. 
+<!-- My work has appeared in top-tier venues including **SIGMOD**, **VLDB**, **ASPLOS**, **NeurIPS**, **WWW**, **TC**, and **TKDE**. -->
 
 Research Interests
 ---
-- **HPC: [[ASPLOS 2023](https://research.csc.ncsu.edu/picture/publications/papers/asplos23a_mcu.pdf)] [[TKDE 2023](https://ieeexplore.ieee.org/abstract/document/10106424)] [[NeurIPS 2022](https://proceedings.neurips.cc/paper_files/paper/2022/file/a995960dd0193654d6b18eca4ac5b936-Paper-Conference.pdf)] [[WWW 2022](https://research.csc.ncsu.edu/picture/publications/papers/www2022.pdf)]**
-- **Compression: [[SIGMOD 2023](https://research.csc.ncsu.edu/picture/publications/papers/sigmod23.pdf)]** **[[SIGMOD 2024](https://dl.acm.org/doi/abs/10.1145/3626765)]** 
 
-<!-- News
---- -->
+- **Data compression:** compressed-domain computing, homomorphic compression for text processing, rule-based graph compression, time-series compression, and database systems that operate directly on compressed data.
+- **High-performance AI systems:** efficient neural network inference, KV cache compression and quantization, LLM inference optimization, edge-device acceleration, and hardware/software co-designed runtime systems.
 
-Invited Talks
+News
 ---
-1. TREC: Transient Redundancy Elimination-based Convolution. <br>
-  NeurIPS, Virtual, 2022.11 [[Video & Slides](https://slideslive.com/38991872)] <br>
-2. Data Reuse in ML. <br>
-  NCSU, Virtual, 2022.11 <br>
+
+<div class="news-container" markdown="1">
+
+- 🇸🇬 **2026.03:** Started a visiting scholar appointment at National University of Singapore, working on low-bit KV cache quantization and hardware/software co-designed LLM inference optimization.
+- 🎉 **2026.02:** Two papers were accepted to SIGMOD 2026, on efficient updates for rule-based compressed graphs and GPU-native learned lossless lightweight compression.
+- 🌟 **2025.11:** Awarded the NSFC Basic Research Scheme for PhD Students as principal investigator.
+- 🌟 **2025.11:** Selected for the Young Science and Technology Scientists Sponsorship Program by CAST - Doctoral Student Special Plan.
+- 🏅 **2025.04:** Received the Gold Medal with the Congratulations of the Jury at the Geneva International Exhibition of Inventions.
+
+</div>
 
 Publications
 ---
-**2025**
-1. **[VLDB’25]** "A Systematic Study on Early Stop Metrics in HPO and the Implications of Uncertainty", ***Jiawei Guan***, Feng Zhang, Jiesong Liu, Xiaoyong Du, Xipeng Shen, VLDB, 2025. (CCF A)
 
-**2024**
-1. **[SIGMOD'2024]** "Homomorphic Compression: Making Text Processing on Compression", ***Jiawei Guan***, Feng Zhang, Siqi Ma, Kuangyu Chen, Yihua Hu, Yuxing Chen, Anqun Pan, Xiaoyong Du, ACM Symposium on Principles of Database Systems (SIGMOD), 2024. (CCF A) [[PDF](https://dl.acm.org/doi/abs/10.1145/3626765)]
-2. **[VLDB'2024]** "Improving Graph Compression for Efficient Resource-Constrained Graph Analytics", Qian Xu, Juan Yang, Feng Zhang, Zheng Chen, ***Jiawei Guan***, Kang Chen, Ju Fan, Youren Shen, Ke Yang, Yu Zhang, Xiaoyong Du, VLDB, 2024. (CCF A) [[PDF](https://dl.acm.org/doi/10.14778/3665844.3665852)]
-3. **[VLDB'2024 (demo)]** "HocoPG: A Database System with Homomorphic Compression for Text Processing", ***Jiawei Guan***, Feng Zhang, Yuxin Tang, Weitang Ye, Xiaoyong Du. VLDB (demo) 2024. (CCF A) [[PDF](https://guan-jw.github.io/files/p2088-guan.pdf)]
-4. **[NeurIPS’24]** "UQ-guided Hyperparameter Optimization for Iterative Learners", Jiesong Liu, Feng Zhang, ***Jiawei Guan***, Xipeng Shen. (CCF A) [[PDF](http://fred1031.github.io/files/NeurIPS2024.pdf)]
-5. **[TC’24]** "Enabling Efficient Deep Learning on MCU with Transient Redundancy Elimination", Jiesong Liu, Feng Zhang, ***Jiawei Guan***, Hsing-Hsuan Sung, Xiaoyong Du, Xipeng Shen, IEEE Transactions on Computers (TC), 2024. (CCF A) [[PDF](http://fred1031.github.io/files/TC2024.pdf)]
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">SIGMOD 2026</span></div>
+<div class="paper-box-text" markdown="1">
 
-**2023**
+<p class="pub-title">Enabling Efficient Update on Rule-Based Compressed Graph</p>
 
-1. **[ASPLOS'2023]** "Space-Efficient TREC for Enabling Deep Learning on Microcontrollers", Jiesong Liu, Feng Zhang, ***Jiawei Guan***, Hsin-Hsuan Sung, Xiaoguang Guo, Xiaoyong Du, Xipeng Shen, ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), March 25, 2023. (CCF A) [[PDF](https://research.csc.ncsu.edu/picture/publications/papers/asplos23a_mcu.pdf)]
-2. **[SIGMOD’2023]** “CompressGraph: Efficient Parallel Graph Analytics with Rule-Based Compression”, Zheng Chen, Feng Zhang, ***Jiawei Guan***, Jidong Zhai, Xipeng Shen, et al., ACM Symposium on Principles of Database Systems (SIGMOD), 2023. (CCF A) [[PDF](https://research.csc.ncsu.edu/picture/publications/papers/sigmod23.pdf)]
-3. **[TKDE'2022]** "Expanding the Edge: Enabling Efficient Winograd CNN Inference With Deep Reuse on Edge Device", Feng Zhang, Ruofan Wu, ***Jiawei Guan***, Zhen Zheng, Xiaoguang Guo, Xiao Zhang, Xiaoyong Du, Xipeng Shen, IEEE Transactions on Knowledge and Data Engineering (TKDE), April 21, 2023. (CCF A) [[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10106424)]
+Lin Feng, Feng Zhang, Zheng Chen, Yuxin Tang, **Jiawei Guan**, Xiaowei Zhu, Xiaoyong Du
 
-**2022**
+<p class="pub-venue">ACM Conference on Management of Data (SIGMOD), 2026</p>
 
-1. **[NeurIPS'2022]** "TREC: Transient Redundancy Elimination-based Convolution", ***Jiawei Guan***, Feng Zhang, Jiesong Liu, Hsin-Hsuan Sung, Ruofan Wu, Xiaoyong Du, Xipeng Shen, NeurIPS, 2022. (CCF A) [Acceptance Rate: 25.6% (2,672/10,411)] [[PDF](https://proceedings.neurips.cc/paper_files/paper/2022/file/a995960dd0193654d6b18eca4ac5b936-Paper-Conference.pdf)]
-2. **[WWW'2022]** “DREW: Efficient Winograd CNN Inference with Deep Reuse," Ruofan Wu, Feng Zhang, ***Jiawei Guan***, Zhen Zheng, Xiaoyong Du and Xipeng Shen, The Web Conference (WWW), 2022. (CCF A) [Acceptance rate: 17.7% (323/1,822)] [[PDF](https://research.csc.ncsu.edu/picture/publications/papers/www2022.pdf)]
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">SIGMOD 2026</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title">L3: A GPU-Native Co-Designed Data Format for Learned Lossless Lightweight Compression</p>
+
+Youyang Xia, Feng Zhang, Junda Pan, Yihao Liu, **Jiawei Guan**, Huanchen Zhang, Xiaoyong Du
+
+<p class="pub-venue">ACM Conference on Management of Data (SIGMOD), 2026</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">ICML 2026</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title">Compressed Semantic Retrieval as External Memory for Scalable AI Systems</p>
+
+**Jiawei Guan**, Yancong Wang, Feng Zhang, Qiang Yin, Wei Wang, Xiaoyong Du
+
+<p class="pub-venue">ICML Workshop, 2026</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">VLDB 2025</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title">A Systematic Study on Early Stop Metrics in HPO and the Implications of Uncertainty</p>
+
+**Jiawei Guan**, Feng Zhang, Jiesong Liu, Xipeng Shen
+
+<p class="pub-venue">International Conference on Very Large Data Bases (VLDB), 2025</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">VLDB 2025</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title">Improving Time Series Data Compression in Apache IoTDB</p>
+
+Yuxin Tang, Feng Zhang, **Jiawei Guan**, Yuan Tian, Xiangdong Huang, Chen Wang, Jianmin Wang, Xiaoyong Du
+
+<p class="pub-venue">International Conference on Very Large Data Bases (VLDB), 2025</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">TCC 2025</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title">Breaking the Edge: Enabling Efficient Neural Network Inference on Integrated Edge Devices</p>
+
+Feng Zhang, Chenyang Zhang, **Jiawei Guan**, Qiangjun Zhou, Kuangyu Chen, Xiao Zhang, Bingsheng He, Jidong Zhai, Xiaoyong Du
+
+<p class="pub-venue">TCC, 2025</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">SIGMOD 2024</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3626765">Homomorphic Compression: Making Text Processing on Compression</a></p>
+
+**Jiawei Guan**, Feng Zhang, Siqi Ma, Kuangyu Chen, Yihua Hu, Yuxing Chen, Anqun Pan, Xiaoyong Du
+
+<p class="pub-venue">ACM Conference on Management of Data (SIGMOD), 2024. CCF A.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">VLDB 2024</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://dl.acm.org/doi/10.14778/3665844.3665852">Improving Graph Compression for Efficient Resource-Constrained Graph Analytics</a></p>
+
+Qian Xu, Juan Yang, Feng Zhang, Zheng Chen, **Jiawei Guan**, Kang Chen, Ju Fan, Youren Shen, Ke Yang, Yu Zhang, Xiaoyong Du
+
+<p class="pub-venue">Proceedings of the VLDB Endowment (PVLDB), 2024. CCF A.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">VLDB Demo 2024</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://guan-jw.github.io/files/p2088-guan.pdf">HocoPG: A Database System with Homomorphic Compression for Text Processing</a></p>
+
+**Jiawei Guan**, Feng Zhang, Yuxin Tang, Weitang Ye, Xiaoyong Du
+
+<p class="pub-venue">VLDB Demo Track, 2024. CCF A.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">NeurIPS 2024</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="http://fred1031.github.io/files/NeurIPS2024.pdf">UQ-Guided Hyperparameter Optimization for Iterative Learners</a></p>
+
+Jiesong Liu, Feng Zhang, **Jiawei Guan**, Xipeng Shen
+
+<p class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2024. CCF A.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">TC 2024</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="http://fred1031.github.io/files/TC2024.pdf">Enabling Efficient Deep Learning on MCU with Transient Redundancy Elimination</a></p>
+
+Jiesong Liu, Feng Zhang, **Jiawei Guan**, Hsing-Hsuan Sung, Xiaoyong Du, Xipeng Shen
+
+<p class="pub-venue">IEEE Transactions on Computers (TC), 2024. CCF A.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">ASPLOS 2023</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://research.csc.ncsu.edu/picture/publications/papers/asplos23a_mcu.pdf">Space-Efficient TREC for Enabling Deep Learning on Microcontrollers</a></p>
+
+Jiesong Liu, Feng Zhang, **Jiawei Guan**, Hsin-Hsuan Sung, Xiaoguang Guo, Xiaoyong Du, Xipeng Shen
+
+<p class="pub-venue">Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023. CCF A.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">SIGMOD 2023</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://research.csc.ncsu.edu/picture/publications/papers/sigmod23.pdf">CompressGraph: Efficient Parallel Graph Analytics with Rule-Based Compression</a></p>
+
+Zheng Chen, Feng Zhang, **Jiawei Guan**, Jidong Zhai, Xipeng Shen, Huanchen Zhang, Wentong Shu, Xiaoyong Du
+
+<p class="pub-venue">ACM Conference on Management of Data (SIGMOD), 2023. CCF A.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">TKDE 2023</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10106424">Expanding the Edge: Enabling Efficient Winograd CNN Inference With Deep Reuse on Edge Device</a></p>
+
+Feng Zhang, Ruofan Wu, **Jiawei Guan**, Zhen Zheng, Xiaoguang Guo, Xiao Zhang, Xiaoyong Du, Xipeng Shen
+
+<p class="pub-venue">IEEE Transactions on Knowledge and Data Engineering (TKDE), 2023. CCF A.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">NeurIPS 2022</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/a995960dd0193654d6b18eca4ac5b936-Paper-Conference.pdf">TREC: Transient Redundancy Elimination-based Convolution</a></p>
+
+**Jiawei Guan**, Feng Zhang, Jiesong Liu, Hsin-Hsuan Sung, Ruofan Wu, Xiaoyong Du, Xipeng Shen
+
+<p class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2022. CCF A. Acceptance rate: 25.6% (2,672/10,411).</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">WWW 2022</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://research.csc.ncsu.edu/picture/publications/papers/www2022.pdf">DREW: Efficient Winograd CNN Inference with Deep Reuse</a></p>
+
+Ruofan Wu, Feng Zhang, **Jiawei Guan**, Zhen Zheng, Xiaoyong Du, Xipeng Shen
+
+<p class="pub-venue">The Web Conference (WWW), 2022. CCF A. Acceptance rate: 17.7% (323/1,822).</p>
+
+</div>
+</div>
+
+Honors and Awards
+---
+
+- **NSFC Basic Research Scheme for PhD Students**, Principal Investigator, 2025--2027.
+- **Young Science and Technology Scientists Sponsorship Program by CAST - Doctoral Student Special Plan**, 2025.
+- **Gold Medal with the Congratulations of the Jury** (top 5%), Geneva International Exhibition of Inventions, 2025.
+- **China National Scholarship**, 2025.
+- **Graduate Academic Excellence Scholarship, First Class**, Renmin University of China, 2024.
+- **Outstanding Innovative Talents Award**, Renmin University of China, 2023.
+- **Outstanding Graduate of Beijing**, 2022.
+- **Huawei Kunpeng Scholarship**, Renmin University of China, 2021.
+
+Education
+---
+
+- **Ph.D. in Computer Science**, Renmin University of China, Sep. 2022 -- Present. Advisor: Prof. Feng Zhang.
+- **B.S. in Data Science and Big Data Technology**, Renmin University of China, Sep. 2018 -- Jun. 2022.
+
+Internship Experience
+---
+
+- **Algorithm Intern, Volcano Engine AI Cloud Search, ByteDance, Oct. 2025 -- Jun. 2026.** Worked on category-aware Reranker model design for large-scale search re-ranking. The project models semantic type, similarity, and matching relationships between queries and documents to improve ranking discrimination for complex queries and cross-category retrieval scenarios.
 
 
-<!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
+Visiting Experience
+---
 
-<!-- A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+- **National University of Singapore**, Visiting Scholar, Mar. 2026 -- Jul. 2026. Advisor: Prof. [Bingsheng He](https://www.comp.nus.edu.sg/~hebs/). Research on low-bit KV cache quantization and hardware/software co-designed LLM inference optimization.
+- **North Carolina State University**, Visiting Scholar, Jan. 2025 -- Aug. 2025. Advisor: Prof. [Xipeng Shen](https://pictureresearch.github.io/picture_website/xshen5/index.htm). Research on data compression and high-performance AI.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html). -->
+<!-- Invited Talks
+---
 
-<!-- Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+1. **TREC: Transient Redundancy Elimination-based Convolution.** NeurIPS, Virtual, Nov. 2022. [[Video & Slides](https://slideslive.com/38991872)]
+2. **Data Reuse in ML.** North Carolina State University, Virtual, Nov. 2022. -->
