@@ -1,0 +1,6 @@
+<article class="blog-card">
+  <p class="blog-card__date"><time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%b %d, %Y' }}</time></p>
+  <h3 class="blog-card__title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a></h3>
+  {% if include.post.excerpt %}<div class="blog-card__excerpt">{{ include.post.excerpt | markdownify }}</div>{% endif %}
+  {% include blog-tags.html post=include.post %}
+</article>

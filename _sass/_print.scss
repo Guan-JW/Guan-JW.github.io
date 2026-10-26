@@ -7,6 +7,14 @@
    ========================================================================== */
 
 @media print {
+  .page__content .news-container {
+    max-height: none;
+    overflow: visible;
+    scrollbar-gutter: auto;
+    padding: 0;
+    border: 0;
+  }
+
   .masthead,
   .toc,
   .page__share,

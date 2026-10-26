@@ -1,0 +1,7 @@
+{% if include.post.tags.size > 0 %}
+<ul class="blog-tags" aria-label="Topics">
+  {% for tag in include.post.tags %}
+    <li><a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag | escape }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}

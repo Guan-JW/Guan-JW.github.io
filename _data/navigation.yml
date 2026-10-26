@@ -6,6 +6,10 @@ main:
   - title: "News"
     url: /#news
 
+  - title: "Blog"
+    url: /blog/
+    blog_only: true
+
   - title: "Publications"
     url: /#publications
 

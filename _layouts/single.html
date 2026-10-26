@@ -17,7 +17,7 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="page{% if page.blog_post %} blog-post{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
@@ -30,7 +30,7 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
-        {% if page.modified %}
+        {% if page.modified and page.blog_post != true %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
@@ -38,11 +38,16 @@ layout: default
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.date %}
+        {% elsif page.date and page.collection != 'blog_pages' %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
              
+        {% if page.blog_post and page.modified %}
+          <p class="blog-updated">Updated <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: '%B %d, %Y' }}</time></p>
+        {% endif %}
+        {% if page.blog_post %}{% include blog-tags.html post=page %}{% endif %}
+
         {% if page.citation and page.paperurl %}
           <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
         {% elsif page.citation %}
@@ -53,20 +58,33 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.blog_post and page.toc %}
+          <nav class="blog-toc" aria-label="Table of contents" hidden>
+            <p class="blog-toc__title">On this page</p>
+            <ul class="blog-toc__items"></ul>
+          </nav>
+        {% endif %}
         {{ content }}
+        {% if page.blog_post %}
+          <p class="blog-back"><a href="{{ '/blog/' | relative_url }}">&larr; Back to Blog</a></p>
+        {% endif %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
+
+      {% if site.blog_enabled and page.blog_post and page.interactions != false and site.blog_interactions.enabled %}
+        {% include blog-interactions.html %}
+      {% endif %}
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        {% include page__taxonomy.html %}
+        {% unless page.blog_post %}{% include page__taxonomy.html %}{% endunless %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
+      {% unless page.blog_post %}{% include post_pagination.html %}{% endunless %}
     </div>
 
     {% if site.comments.provider and page.comments %}

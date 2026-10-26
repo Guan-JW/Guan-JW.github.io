@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+exec bash bin/serve --config _config.yml,_config.dev.yml,_config.blog-preview.yml --livereload-port 35730 "$@"

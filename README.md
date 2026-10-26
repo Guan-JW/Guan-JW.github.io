@@ -4,6 +4,12 @@ I think I've got things running smoothly and fixed some major bugs, but feel fre
 
 ### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
 
+## Personal blog
+
+The blog is off online by default. Run `bash bin/preview-blog` to preview it
+locally, including unfinished entries. See [the writing and publishing guide](docs/blog.md)
+for the single publishing switch, post template, and release workflow.
+
 # Instructions
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)

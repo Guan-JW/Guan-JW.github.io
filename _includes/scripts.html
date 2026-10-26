@@ -1,4 +1,7 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+{% if site.blog_enabled and page.blog_post and page.toc %}
+<script src="{{ '/assets/js/blog.js' | relative_url }}" defer></script>
+{% endif %}
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}

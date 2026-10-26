@@ -1,0 +1,29 @@
+{% assign interaction_server = site.blog_interactions.server_url | default: '' | strip %}
+{% if site.blog_interactions_preview or interaction_server != '' and page.published == true %}
+<section class="blog-interactions" aria-labelledby="blog-discussion-title"
+  data-mode="{% if site.blog_interactions_preview %}preview{% else %}live{% endif %}"
+  data-server="{% unless site.blog_interactions_preview %}{{ interaction_server | escape }}{% endunless %}"
+  data-path="{{ page.url | relative_url | escape }}"
+  data-heart="{{ '/assets/images/blog-heart.svg' | relative_url }}">
+  <h2 id="blog-discussion-title">Likes &amp; discussion</h2>
+  {% if site.blog_interactions_preview %}
+    <p class="blog-interactions__note">Local preview only. Likes and comments reset on reload and are not saved or emailed.</p>
+    <button class="blog-like" type="button" aria-pressed="false" disabled>♡ Like <span data-like-count>0</span></button>
+    <form class="blog-comment-form">
+      <label for="preview-comment-name">Name</label>
+      <input id="preview-comment-name" name="name" autocomplete="name" maxlength="80" required disabled>
+      <label for="preview-comment-text">Comment</label>
+      <textarea id="preview-comment-text" name="comment" rows="4" maxlength="2000" required disabled></textarea>
+      <button type="submit" class="btn" disabled>Add preview comment</button>
+    </form>
+    <div class="blog-preview-comments" aria-live="polite"></div>
+  {% else %}
+    <p class="blog-interactions__note">Join the discussion as a guest or sign in. Loading comments connects to our comment service. Comments are public; email addresses are not displayed.</p>
+    <button class="btn" type="button" data-load-comments>Load likes and comments</button>
+    <p role="status" data-comments-status></p>
+    <div id="blog-waline"></div>
+  {% endif %}
+  <noscript><p>Please enable JavaScript to use likes and comments.</p></noscript>
+</section>
+<script src="{{ '/assets/js/blog-interactions.js' | relative_url }}" defer></script>
+{% endif %}

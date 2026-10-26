@@ -8,6 +8,7 @@
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
+            {% if link.blog_only and site.blog_enabled != true %}{% continue %}{% endif %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}

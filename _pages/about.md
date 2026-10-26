@@ -25,8 +25,11 @@ Research Interests
 News
 ---
 
-<div class="news-container" markdown="1">
+<div class="news-container" markdown="1" tabindex="0" role="region" aria-labelledby="news">
 
+- 🔥 **2026.10:** Our TCC paper [Breaking the Edge: Enabling Efficient Neural Network Inference on Integrated Edge Devices](https://www.computer.org/csdl/journal/cc/2025/02/10959707/25LW8D6NirS) was recognized as both an **ESI Highly Cited Paper** and an **ESI Hot Paper**.
+- 🎉 **2026.10:** Our paper on [compressed model-state management for heterogeneous LLM fine-tuning with FlagScale](https://statesys2026.hotcrp.com/doc/statesys2026-paper7.pdf) was accepted to **StateSys 2026**, a non-archival workshop co-located with ACM SIGOPS ATC 2026.
+- 🎉 **2026.09:** Our demo paper [CEDAR: Compressed-Object Parallel Retrieval for Scalable AI Systems](https://doi.org/10.1145/3816891.3834853) was accepted to **ICPP 2026** and published in the workshop proceedings.
 - 🇸🇬 **2026.03:** Started a visiting scholar appointment at National University of Singapore, working on low-bit KV cache quantization and hardware/software co-designed LLM inference optimization.
 - 🎉 **2026.02:** Two papers were accepted to SIGMOD 2026, on efficient updates for rule-based compressed graphs and GPU-native learned lossless lightweight compression.
 - 🌟 **2025.11:** Awarded the NSFC Basic Research Scheme for PhD Students as principal investigator.
@@ -35,8 +38,38 @@ News
 
 </div>
 
+{% if site.blog_enabled %}
+{% include blog-recent.html %}
+{% endif %}
+
 Publications
 ---
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">StateSys 2026</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://statesys2026.hotcrp.com/doc/statesys2026-paper7.pdf">Compressed Model-State Management for Heterogeneous LLM Fine-Tuning with FlagScale</a></p>
+
+Yuchen Meng, Feng Zhang, **Jiawei Guan**, Youyang Xia, Lin Feng, Mengsi Lyu, Ruidi Zhu, Yonghua Lin, Tiezhu Gao
+
+<p class="pub-venue">First Workshop on State Management in Modern Parallel and Distributed Systems (StateSys), 2026. Accepted for presentation; non-archival.</p>
+
+</div>
+</div>
+
+<div class="paper-box">
+<div class="paper-box-image"><span class="badge">ICPP Demo 2026</span></div>
+<div class="paper-box-text" markdown="1">
+
+<p class="pub-title"><a href="https://doi.org/10.1145/3816891.3834853">CEDAR: Compressed-Object Parallel Retrieval for Scalable AI Systems</a></p>
+
+**Jiawei Guan**, Feng Zhang, Yancong Wang, Bingsheng He, Jidong Zhai, Xiaoyong Du
+
+<p class="pub-venue">Workshop Proceedings of the 55th International Conference on Parallel Processing (ICPP Workshops '26), Demo Paper, pp. 129–132, 2026. Published September 27, 2026.</p>
+
+</div>
+</div>
 
 <div class="paper-box">
 <div class="paper-box-image"><span class="badge">SIGMOD 2026</span></div>
@@ -112,6 +145,8 @@ Yuxin Tang, Feng Zhang, **Jiawei Guan**, Yuan Tian, Xiangdong Huang, Chen Wang, 
 Feng Zhang, Chenyang Zhang, **Jiawei Guan**, Qiangjun Zhou, Kuangyu Chen, Xiao Zhang, Bingsheng He, Jidong Zhai, Xiaoyong Du
 
 <p class="pub-venue">TCC, 2025</p>
+
+<p class="pub-recognition"><span class="pub-recognition-badge">ESI Highly Cited Paper</span><span class="pub-recognition-badge pub-recognition-badge--hot">ESI Hot Paper</span></p>
 
 </div>
 </div>
