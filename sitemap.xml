@@ -1,0 +1,31 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for collection in site.collections %}
+    {% if collection.output %}
+      {% for doc in collection.docs %}
+        {% if doc.sitemap != false and doc.date <= site.time %}
+        <url>
+          <loc>{{ doc.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+          <lastmod>{{ doc.modified | default: doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>
+        </url>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% for doc in site.html_pages %}
+    {% if doc.sitemap != false and doc.url != '/404.html' %}
+    <url><loc>{{ doc.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc></url>
+    {% endif %}
+  {% endfor %}
+  {% for file in site.static_files %}
+    {% if file.extname == '.html' or file.extname == '.htm' or file.extname == '.xhtml' or file.extname == '.pdf' %}
+      {% if file.sitemap != false and file.name != '404.html' %}
+      <url><loc>{{ file.path | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc></url>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</urlset>

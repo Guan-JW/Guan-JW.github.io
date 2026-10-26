@@ -1,0 +1,82 @@
+<div id="llama-kv-pool">
+  <style>
+    #llama-kv-pool .pool-grid { display:grid; grid-template-columns: minmax(70px,1.2fr) repeat(4,minmax(0,1fr)); gap:5px; align-items:center; margin:12px 0; }
+    #llama-kv-pool .cell { padding:8px 2px; text-align:center; background:color-mix(in srgb,var(--viz-series-1) 12%,transparent); color:var(--foreground); }
+    #llama-kv-pool .empty { background:var(--muted); color:var(--muted-foreground); }
+    #llama-kv-pool .selected { background:color-mix(in srgb,var(--viz-series-2) 24%,transparent); }
+    #llama-kv-pool .label { text-align:center; }
+    #llama-kv-pool .cursor-grid { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:4px; margin:12px 0; }
+    #llama-kv-pool .slot { display:grid; gap:6px; text-align:center; }
+    #llama-kv-pool .pointer { min-height:24px; color:var(--foreground); }
+    #llama-kv-pool .modes { display:flex; flex-wrap:wrap; gap:22px; margin:12px 0; }
+    #llama-kv-pool .mode { flex:1 1 220px; }
+    #llama-kv-pool .partition { display:flex; gap:4px; margin-top:8px; }
+    #llama-kv-pool .partition .cell { flex:1; }
+    #llama-kv-pool section { margin-bottom:24px; }
+  </style>
+  <section aria-label="Stream partitions">
+    <h3>1 · Streams partition the cache</h3>
+    <div class="modes">
+      <div class="mode"><div>Unified: A, B → stream 0</div><div class="partition"><span class="cell">A</span><span class="cell">B</span><span class="cell">A</span><span class="cell empty">free</span></div><div class="text-small">One shared slot pool · one cursor</div></div>
+      <div class="mode"><div>Non-unified: A → stream 0; B → stream 1</div><div class="partition"><span class="cell">A</span><span class="cell empty">free</span><span aria-hidden="true">│</span><span class="cell">B</span><span class="cell empty">free</span></div><div class="text-small">Separate slot pools · one cursor each</div></div>
+    </div>
+    <div class="text-small">Illustrative capacities; a stream is a storage partition.</div>
+  </section>
+  <section aria-label="Aligned slots across layer tensors">
+    <h3>2 · One slot index aligns data across layers</h3>
+    <div class="pool-grid text-small">
+      <span>Slot index</span><span class="label">0</span><span class="label">1</span><span class="label">2</span><span class="label">3</span>
+      <span>Metadata</span><span class="cell">A / 0</span><span class="cell">B / 0</span><span class="cell">A / 1</span><span class="cell empty">free</span>
+      <span>Layer 0 · K</span><span class="cell">K₀(A/0)</span><span class="cell">K₀(B/0)</span><span class="cell">K₀(A/1)</span><span class="cell empty">—</span>
+      <span>Layer 0 · V</span><span class="cell">V₀(A/0)</span><span class="cell">V₀(B/0)</span><span class="cell">V₀(A/1)</span><span class="cell empty">—</span>
+      <span>Layer 1 · K</span><span class="cell">K₁(A/0)</span><span class="cell">K₁(B/0)</span><span class="cell">K₁(A/1)</span><span class="cell empty">—</span>
+      <span>Layer 1 · V</span><span class="cell">V₁(A/0)</span><span class="cell">V₁(B/0)</span><span class="cell">V₁(A/1)</span><span class="cell empty">—</span>
+    </div>
+    <div class="text-small">A / 0 = sequence A, position 0. Each K/V entry contains all KV heads.</div>
+  </section>
+  <section aria-label="Circular slot search demonstration">
+    <h3>3 · The cursor wraps; live entries survive</h3>
+    <div class="viz-controls"><button class="btn" type="button" data-back disabled>Previous</button><button class="btn" type="button" data-next>Next step</button><span class="text-small" data-step>Step 1 / 5</span></div>
+    <div class="cursor-grid text-small tabular-nums" data-slots></div>
+    <div aria-live="polite" data-status></div>
+    <div class="text-small">Example: eight slots, two new tokens; ▲ = scan position / next cursor.</div>
+  </section>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('llama-kv-pool');
+  const slots = root.querySelector('[data-slots]');
+  const back = root.querySelector('[data-back]');
+  const next = root.querySelector('[data-next]');
+  const steps = [
+    {cursor:7, selected:[], status:'Start at slot 7; slots 1, 4, and 7 are free.'},
+    {cursor:7, selected:[7], status:'Select slot 7 for the first new token.'},
+    {cursor:0, selected:[7], status:'Wrap to slot 0; skip its live entry.'},
+    {cursor:1, selected:[7,1], status:'Select slot 1 for the second new token.'},
+    {cursor:2, selected:[7,1], status:'Commit slots 7 and 1; save next cursor = 2.', committed:true}
+  ];
+  let step = 0;
+  function draw() {
+    const state = steps[step];
+    slots.replaceChildren();
+    for (let i=0;i<8;i++) {
+      const slot = document.createElement('div');
+      slot.className = 'slot';
+      const index = document.createElement('span'); index.textContent = i;
+      const value = document.createElement('span');
+      const chosen = state.selected.includes(i);
+      const free = [1,4,7].includes(i);
+      value.className = 'cell' + (chosen ? ' selected' : free ? ' empty' : '');
+      value.textContent = chosen ? (state.committed ? (i===7 ? 'new1' : 'new2') : 'pick') : free ? 'free' : 'live';
+      const pointer = document.createElement('span'); pointer.className='pointer'; pointer.textContent = state.cursor===i ? '▲' : '';
+      slot.append(index,value,pointer); slots.append(slot);
+    }
+    root.querySelector('[data-status]').textContent = steps[step].status;
+    root.querySelector('[data-step]').textContent = 'Step ' + (step+1) + ' / ' + steps.length;
+    back.disabled = step===0; next.disabled=step===steps.length-1;
+  }
+  back.addEventListener('click', () => { if(step>0) {step--;draw();} });
+  next.addEventListener('click', () => { if(step<steps.length-1) {step++;draw();} });
+  draw();
+})();
+</script>

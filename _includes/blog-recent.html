@@ -1,0 +1,13 @@
+<section class="blog-recent" aria-labelledby="recent-posts">
+  <h2 id="recent-posts">Recent Posts</h2>
+  <p class="blog-intro">Notes on things I’m learning, experiments I’m exploring, and ideas that interest me.</p>
+  <div class="blog-list">
+    {% assign blog_posts = site.blog | where_exp: 'post', 'post.date <= site.time' | sort: 'date' | reverse %}
+    {% for post in blog_posts limit:3 %}
+      {% include blog-card.html post=post %}
+    {% else %}
+      <p class="blog-empty">New notes are on their way. Check back soon.</p>
+    {% endfor %}
+  </div>
+  <p class="blog-all"><a href="{{ '/blog/' | relative_url }}">View all posts &rarr;</a></p>
+</section>

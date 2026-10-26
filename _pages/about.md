@@ -35,6 +35,10 @@ News
 
 </div>
 
+{% if site.blog_enabled %}
+{% include blog-recent.html %}
+{% endif %}
+
 Publications
 ---
 

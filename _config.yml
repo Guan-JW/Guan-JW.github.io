@@ -17,7 +17,15 @@ repository               : "Guan-JW.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 60
-future                   : true
+future                   : false
+# Change only false to true when the blog is ready to go online.
+# Keep the YAML anchor: it also controls whether blog URLs are generated.
+blog_enabled             : &blog_enabled false
+# Shared likes/comments use a separate Waline server. No credentials belong here.
+blog_interactions:
+  enabled: true
+  server_url: "" # Set to your deployed HTTPS Waline URL; see docs/blog-comments.md.
+blog_interactions_preview: false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -124,6 +132,10 @@ include:
   - _pages
   - files
 exclude:
+  - services
+  - bin
+  - docs
+  - tests
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -176,6 +188,11 @@ kramdown:
 
 # Collections
 collections:
+  blog:
+    output: *blog_enabled
+    permalink: /blog/:path/
+  blog_pages:
+    output: *blog_enabled
   teaching:
     output: false
     permalink: /:collection/:path/
@@ -192,17 +209,25 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
+  # Blog entries are a separate collection so the master switch prevents output.
   - scope:
       path: ""
-      type: posts
+      type: blog
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      blog_post: true
+      published: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+  - scope:
+      path: ""
+      type: blog_pages
+    values:
+      layout: single
+      author_profile: true
   # _pages
   - scope:
       path: ""

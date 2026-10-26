@@ -1,0 +1,12 @@
+# Local use only. The normal GitHub Pages build reads _config.yml alone.
+blog_enabled: &blog_enabled true
+collections:
+  blog:
+    output: *blog_enabled
+  blog_pages:
+    output: *blog_enabled
+unpublished: true
+future: false
+destination: _site-blog-preview
+# Preview interactions are temporary and never connect to the live service.
+blog_interactions_preview: true

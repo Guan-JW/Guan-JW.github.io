@@ -1,0 +1,7 @@
+{
+  "name": "jiawei-blog-comments",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": "22.x" },
+  "dependencies": { "@waline/vercel": "1.42.0", "nodemailer": "10.0.0" }
+}

@@ -14,15 +14,19 @@ A list of all the posts and pages found on the site. For you robots out there is
   {% include archive-single.html %}
 {% endfor %}
 
-<h2>Posts</h2>
-{% for post in site.posts %}
+{% if site.blog_enabled %}
+<h2>Blog</h2>
+<p><a href="{{ '/blog/' | relative_url }}">All posts</a></p>
+{% assign blog_posts = site.blog | where_exp: 'post', 'post.date <= site.time' | sort: 'date' | reverse %}
+{% for post in blog_posts %}
   {% include archive-single.html %}
 {% endfor %}
+{% endif %}
 
 {% capture written_label %}'None'{% endcapture %}
 
 {% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
+{% unless collection.output == false or collection.label == "posts" or collection.label == "blog_pages" or collection.label == "blog" %}
   {% capture label %}{{ collection.label }}{% endcapture %}
   {% if label != written_label %}
   <h2>{{ label }}</h2>
@@ -30,7 +34,7 @@ A list of all the posts and pages found on the site. For you robots out there is
   {% endif %}
 {% endunless %}
 {% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
+  {% unless collection.output == false or collection.label == "posts" or collection.label == "blog_pages" or collection.label == "blog" %}
   {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
